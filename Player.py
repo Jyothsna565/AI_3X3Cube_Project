@@ -2,7 +2,7 @@ import random, time
 from Puzzle import State, move, num_solved_sides, num_pieces_correct_side, shuffle, n_move_state, one_move_state
 
 
-class AgentClass:
+class PlayerClass:
     def __init__(self, QValues=None, cube=None):
         self.visited = []
         self.visit_count = {}
@@ -175,7 +175,7 @@ class AgentClass:
             self.last_action = best_action
             print(self.curr_state)
             if self.curr_state.isGoalState():
-                print("AGENT REACHED A GOAL STATE!!!")
+                print("PLAYER REACHED A GOAL STATE!!!")
                 time.sleep(5)
                 return
 
@@ -219,16 +219,16 @@ class AgentClass:
                 self.R[new_state].append(self.reward(new_state, action))
         return max(self.R[new_state])
 
-agent = AgentClass()
+player = PlayerClass()
 print("REGISTERING PATTERN DATABASE, THIS WILL TAKE A LITTLE WHILE")
-agent.register_patternsforCube()
-print(agent.QV)
+player.register_patternsforCube()
+print(player.QV)
 Epsilons = [i/ 50 for i in range(50)]
 Epsilons.reverse()
 for i in range(2):
     for j, e in enumerate(Epsilons):
         print("======= ROUND " + str(j) + "=========")
-        agent.QLearn(epsilon=e)
-print("There are " + str(len(agent.QV)) + " keys in Q Table")
-agent.Play()
-agent.print_()
+        player.QLearn(epsilon=e)
+print("There are " + str(len(player.QV)) + " keys in Q Table")
+player.Play()
+player.print_()
