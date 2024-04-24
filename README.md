@@ -1,4 +1,4 @@
-This project comprises two files: **Player.py and 3X3Puzzle.py**. 
+This project comprises two files: **Player.py and Puzzle.py**. 
 The Player class in Player.py contains various methods, managing visited and revisited states, and variables such as cube and QV representing the cube's state (solved/unsolved) and the corresponding Q-values.
 
 Initially, Q-values are unspecified, randomly set, and then assigned based on the states. The start state can be provided as either an array of arrays or a dictionary representing the cube's sides and their values.
