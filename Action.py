@@ -1,4 +1,4 @@
-from 3X3Puzzle import State, move
+from Puzzle import State, move
 
 def makeNearGoal():
     cube = State()
