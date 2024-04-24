@@ -4,7 +4,7 @@
 # last row and new
  
 import unittest
-from 3X3Puzzle import State, num_pieces_correct_side, num_solved_sides
+from Puzzle import State, num_pieces_correct_side, num_solved_sides
 
 def compareReverse(l1, l2):
     for i in range(len(l1)):
