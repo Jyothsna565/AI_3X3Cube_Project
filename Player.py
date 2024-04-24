@@ -1,5 +1,5 @@
 import random, time
-from 3X3Puzzle import State, move, num_solved_sides, num_pieces_correct_side, shuffle, n_move_state, one_move_state
+from Puzzle import State, move, num_solved_sides, num_pieces_correct_side, shuffle, n_move_state, one_move_state
 
 
 class PlayerClass:
