@@ -15,4 +15,4 @@ Supporting methods in 3X3Puzzle.py handle tasks such as shuffling the cube if th
 
 The variable n determines the number of rotations used to shuffle the cube initially, assuming it can rotate 180 degrees to manage the state space branching factor. This parameterization enhances the efficiency of the algorithm by controlling the complexity of the initial state.
 
-**Implemented by Jyothsna Priyanka Sakhamuri and Pranay Gudupally, this project represents a sophisticated approach to solving the 3x3 puzzle through machine learning and reinforcement learning techniques.**
+**Implemented by Jyothsna Priyanka Sakhamuri and Pranay Gudupally, this project represents a sophisticated approach in solving the 3x3 puzzle through machine learning and reinforcement learning techniques.**
